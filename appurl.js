@@ -50,7 +50,7 @@
 
     if (typeof exports === 'object' && typeof module === 'object')
         module.exports = factory();
-    else if (typeof defile === 'function' && define.amd)
+    else if (typeof define === 'function' && define.amd)
         define(factory);
     else if (typeof exports === 'object')
         exports.AppURL = factory();
